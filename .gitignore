@@ -1,6 +1,4 @@
-*.pyc
-__pycache__
+ HEAD
 *~
-imaginit.sqlite3
-.DS_Store
-media
+=======
+ivenv
