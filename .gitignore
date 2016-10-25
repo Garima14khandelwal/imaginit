@@ -1,4 +1,9 @@
- HEAD
+*.pyc
+__pycache__
+ashish
+imaginit.sqlite3
+.DS_Store
+media
 *~
-=======
 ivenv
+*.swp
