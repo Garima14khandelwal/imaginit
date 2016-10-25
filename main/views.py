@@ -60,7 +60,7 @@ class Home(LoginRequiredMixin, TemplateView):
             new_file = UploadFile(
                 file=request.FILES['file'], owner=request.user)
             new_file.save()
-            return HttpResponseRedirect(reverse('main:manip'))
+            return HttpResponseRedirect(reverse('main:home'))
         return HttpResponse("Error", status=403)
 
     def get(self, request):
@@ -89,7 +89,7 @@ class Manip(LoginRequiredMixin, TemplateView):
             new_file = UploadFile(
                 file=request.FILES['file'], owner=request.user)
             new_file.save()
-            return HttpResponseRedirect(reverse('main:home'))
+            return HttpResponseRedirect(reverse('main:manip'))
         return HttpResponse("Error", status=403)
     def get(self, request):
         """Handle dashboard output information."""
@@ -167,7 +167,7 @@ class ImageProcessing(LoginRequiredMixin, TemplateView):
         temp_file = os.path.join(output, temp_file_location)
         if not os.path.isdir(os.path.dirname(temp_file)):
             os.makedirs(os.path.dirname(temp_file))
-        if(add_effect=='imagefit' or add_effect=='rotate' or add_effect=='flip' or add_effect=='resize' or add_effect=='mirror' or add_effect=='crop'):
+        if(add_effect=='imagefit' or add_effect=='rotate' or add_effect=='flip' or add_effect=='resize' or add_effect=='crop'):
             final_image = meffect[add_effect](image)
         elif(add_effect=='denoise'):
             final_image = effect[add_effect]("{}{}".format(BASE_DIR, path))

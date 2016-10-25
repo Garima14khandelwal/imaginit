@@ -62,6 +62,7 @@ effect = {
     "sharpness": sharpness,
     "contrast": contrast,
     "invert": invert,
+    "mirror" : mirror,
     "denoise": denoise,
     "mirror": mirror,
 }
