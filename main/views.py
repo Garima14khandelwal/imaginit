@@ -15,9 +15,8 @@ from .meffects import meffect
 from imaginit.settings import MEDIA_ROOT, MEDIA_URL, BASE_DIR
 from .sweep import housekeeping
 import random
-import numpy as np
-import cv2
-from .forms import CroppingForm
+from .models import UserProfile
+#from django.contrib.auth.decorators import login_required
 
 
 class Effects(TemplateView):
@@ -27,18 +26,10 @@ class Effects(TemplateView):
         """Return all the effects available."""
         return HttpResponse(content=[effect.keys()])
 
-def Crop(request):
-    form_class = CroppingForm
-    if request.method == 'POST':
-        form = form_class(data=request.POST)
-        if form.is_valid():
-            top = request.POST.get('top')
-            bottom = request.POST.get('bottom')
-            left = request.POST.get('left')
-            right = request.POST.get('right')
-                
-    return render(request, 'main/crop.html', {'form': form_class})
-
+'''@login_required(login_url="login/")
+def login(request):
+    return render(request,"index.html")'''
+    
 
 class Meffects(TemplateView):
     """Return the available effects."""
@@ -167,7 +158,7 @@ class ImageProcessing(LoginRequiredMixin, TemplateView):
         temp_file = os.path.join(output, temp_file_location)
         if not os.path.isdir(os.path.dirname(temp_file)):
             os.makedirs(os.path.dirname(temp_file))
-        if(add_effect=='imagefit' or add_effect=='rotate' or add_effect=='flip' or add_effect=='resize' or add_effect=='crop'):
+        if(add_effect=='imagefit' or add_effect=='rotate' or add_effect=='flip' or add_effect=='resize' or add_effect=='mirror'):
             final_image = meffect[add_effect](image)
         elif(add_effect=='denoise'):
             final_image = effect[add_effect]("{}{}".format(BASE_DIR, path))

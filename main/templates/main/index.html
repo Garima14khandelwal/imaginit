@@ -1,4 +1,4 @@
-{% extends "main/partials/base.html" %} 
+{% extends "main/base.html" %} 
 {% block content%} 
 {% load staticfiles %}
 {% load imagekit %}
@@ -49,27 +49,14 @@
     
 </div>
 
-<div class="main col-lg-2  col-xs-2" style="margin:0; padding:0; height:100vh; background-color: gainsboro;">
+<div class="main col-lg-2  col-xs-2" style="margin:0; padding:0; height:100vh;">
 <form name=f style="margin-left:50px;">
 	<br>
-	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label=".">Effects</div><br><br>
-	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label="." onclick=fun() >Manipulation</div><br><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label="." >Effects</div><br><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label="." onclick="fun()" >Manipulation</div><br><br>
 	<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label="." <a >Crop</div><br><br>-->
-	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="crop.html">crop</a>
+	<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/crop/">crop</a>-->
 </form>
 </div>
-
-<script>
-// facebook sdk
-(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s);
-js.id = id;
-js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1689075798037081";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
-
 
 {% endblock %} 

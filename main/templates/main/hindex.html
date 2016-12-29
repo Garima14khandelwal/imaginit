@@ -3,12 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>	Imaginit</title>
-	<meta name="description" content="Kite Coming Soon HTML Template by Jewel Theme" >
+	<meta name="description"  >
 	<meta name="author" content="Jewel Theme">
 
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
 	<!-- Bootstrap  -->
 	<link href="static/main/index/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +18,31 @@
 	<!-- Custom Styles -->
 	<link href="static/main/index/assets/css/style.css" rel="stylesheet">
 
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<![endif]-->
 
+	<script>
+		function home()
+			window.location="/home/";
+		function login()
+			window.location="/admin/";
+	</script>
+	<style>
+	.button {
+	    background-color: black; /* Green */
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	}
+	.button1 {border-radius: 50%;}
+	.button2 {border-radius: 50%;}
+	</style>
+	
+	
 </head>
 <body>
 
@@ -61,9 +81,10 @@
 			<ul id="headernavigation" class="nav navbar-nav">
 				<li class="active"><a href="#page-top">Home</a></li>	
 				<li><a href="#about">About</a></li>	
-	
-                                                                                                                                                                                                                                                                                                                  				<li><a href="#contact">Contact</a></li>		
+				<li><a href="#contact">Contact</a></li>	
+						
 			</ul> <!-- /.nav .navbar-nav -->
+			
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->
 	<!-- Main Menu End -->
@@ -78,15 +99,16 @@
 				</h1><!-- /.site-title -->
 				<h3 class="section-name">
 					<span>
-						cool editing service
+						<p>cool editing service<br><br>
+						<input class="button button1" type=button name=login value=login onclick=login()>
+						<input class="button button1" type=button name=login value=service onclick=home()>
+						</p>
+						
 					</span>
 	         		</h3><!-- /.section-name -->
 				<h2 class="section-title">
 				 <div class>
 				</h2><!-- /.Section-title  -->
-				<div id="time_countdown" class="time-count-container">
-
-		
 
 				
 				<div class="next-section">
@@ -110,78 +132,41 @@
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
 					We Are dedicated
-				</h2><!-- /.Section-title  -->
+				</h2><br><!-- /.Section-title  -->
 				
                                 <center>
 				<div class="team-container">
 					<div class="row">
-						<div class="col-sm-4">
+						<div class="col-sm-6">
 							<div class="team-member">
 								<figure>
-									<img src="static/main/indeximages/team/team-member-1.jpg" alt="Team Member">
+									<img src="static/main/index/images/team/garima.jpg" alt="Team Member">
 									<figcaption>
-										<p class="member-name">Teena garg</p>
-										<p class="designation">
-											CEO
-										</p><!-- /.designation -->
+										<p class="member-name">Garima khandelwal</p>
 
 									</figcaption>
 								</figure>
 								<!-- /.social-btn-container -->
 							</div><!-- /.team-member -->
 						</div><!-- /.col-sm-4 -->
-
-
-						
-
-						<div class="col-sm-4">
+                                                      <div class="col-sm-6">
 							<div class="team-member">
 								<figure>
-									<img src="images/team/team-member-3.jpg" alt="Team Member">
+									<img src="static/main/index/images/team/teena.jpg" alt="Team Member">
 									<figcaption>
 										<p class="member-name">
-											Max Anthony
+											Teena garg
 										</p><!-- /.member-name -->
-										<p class="designation">
-											Developer 
-										</p><!-- /.designation -->
 
 									</figcaption>
 								</figure>
-								<div class="social-btn-container">
-									<div class="team-socail-btn">
-										<span class="social-btn-box facebook-btn-container">
-											<a href="#" class="facebook-btn">
-												<i class="fa fa-facebook"></i>
-											</a><!-- /.facebook-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box twitter-btn-container">
-											<a href="#" class="twitter-btn">
-												<i class="fa fa-twitter"></i>
-											</a><!-- /.twitter-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box linkedin-btn-container">
-											<a href="#" class="linkedin-btn">
-												<i class="fa fa-linkedin"></i>
-											</a><!-- /.linkedin-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box github-btn-container">
-											<a href="#" class="github-btn">
-												<i class="fa fa-github-alt"></i>
-											</a><!-- /.github-btn -->
-										</span><!-- /.social-btn-box -->
-									</div><!-- /.team-socail-btn -->
-								</div><!-- /.social-btn-container -->
 							</div><!-- /.team-member -->
 						</div><!-- /.col-sm-4 -->
 					</div><!-- /.row -->
 				</center>
 				</div><!-- /.team-container -->
 				<div class="next-section">
-					<a class="go-to-subscribe"><span></span></a>
+					<a class="go-to-contact"><span></span></a>
 				</div><!-- /.next-section -->
 
 			</div><!-- /.container -->
@@ -191,29 +176,25 @@
 	</section><!-- /#about -->
 	<!-- About Us Section End -->
 
-
-
-	
-
-
 		<!-- Contact Section -->
 		<section id="contact" class="section-style" data-background-image="static/main/index/images/background/contact.jpg">
 			<div class="pattern height-resize">
 				<div class="container">
 					<h3 class="section-name">
-						<span>
+						<span><br><br><br>
 							Contact
-						</span>
+						</span><br><br>
 					</h3><!-- /.section-name -->
 					<h2 class="section-title">
 						Get in Touch 
 					</h2><!-- /.Section-title  -->
-					<p class="section-description">
-						Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+					<p class="section-description"><br>
+						
 					</p><!-- /.section-description -->
+					
 
 				<b>Garima</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>Teena</b>
-				<b>garimakhandelwal14@gmail.com</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>tggargteena18@gmail.com</b>
+				<b>khandelwalgarima14jan@gmail.com</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>tggargteena18@gmail.com</b>
 				<b>9880583475</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b>9880583461</b>		
 
 					<div class="next-section">
@@ -225,11 +206,6 @@
 
 		</section><!-- /#contact -->
 		<!-- Contact Section End -->
-
-
-
-		
-
 
 		<!-- jQuery Library -->
 		<script type="text/javascript" src="static/main/index/assets/js/jquery-2.1.0.min.js"></script>

@@ -1,5 +1,5 @@
 {% block content%} {% load imagekit %}{%load staticfiles%}
-<div class='uploader'>
+<div class='uploader' >
 
     <form class="dropzone" action="{% url "main:home" %}" method="POST" enctype="multipart/form-data">
         {% csrf_token %} 
@@ -37,7 +37,7 @@
                 <h4 class="modal-title">Warning!</h4>
             </div>
             <div class="modal-body">
-                <img class="del-image" src='' width=30% height=100px>
+                <img class="del-image" src='' width=30% height=130px>
                 <center> You are about to delete this picture, continue ?</center>
             </div>
             <div class="modal-footer">

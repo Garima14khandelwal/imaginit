@@ -110,7 +110,7 @@ a:focus{
 	text-align:center;
 	text-transform:uppercase;
 	font-weight:300;
-	font-size:80px;
+	font-size:50px;
 }
 .section-description{
 	font-weight:300;
@@ -597,9 +597,9 @@ a:focus{
 }
 .team-container .member-name {
 	font-size: 1.5em;
-	font-weight: 700;
+	font-weight: 500;
 	margin: 0;
-	padding: 26px 10px 5px 10px;
+	padding: 10px 10px 5px 10px;
 }
 .team-container figcaption p{
 	font-size: 1.125em;
@@ -693,11 +693,11 @@ a:focus{
 }
 .team-container .team-member:hover figure{
 	background-color:#3498db;
-	color:#fff;
+	
 }
 .team-container .team-member:hover figcaption{
 	border-color:#3498db;
-	color:#fff;
+	
 }
 
 .team-container .team-member:hover .social-buttons{

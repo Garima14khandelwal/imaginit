@@ -20,14 +20,18 @@ def imagefit(image):
     imagefit = ImageOps.fit(image, (300, 300), Image.ANTIALIAS)
     return imagefit
     
-def crop(image):
+'''def crop(image):
     img = image.crop( (100,10,400,400) )
-    return img
-       
+    return img'''
+
+def mirror(image):
+    """Mirrior image horizontally."""
+    return ImageOps.mirror(image)
+           
 meffect = {
     "flip": flip,
     "rotate": rotate,
     "imagefit":imagefit,
     "resize":resize,
-    "crop" : crop,
+    "mirror":mirror,
 }

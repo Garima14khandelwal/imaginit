@@ -24,7 +24,7 @@ SECRET_KEY = 'p1t6)s_f^v!)e5r=7s_kcc42=6wyqow0lx04_(c68g31@qk(gj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+LOGIN_REDIRECT_URL = '/'
 ALLOWED_HOSTS = []
 SITE_ID = 1
 # Application definition
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'bootstrap3',
+    'coverage'
 ]
 
 MIDDLEWARE_CLASSES = [

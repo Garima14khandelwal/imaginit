@@ -1,4 +1,4 @@
-{% extends "main/partials/base.html" %} 
+{% extends "main/base.html" %} 
 {% block content%} 
 {% load staticfiles %}
 {% load imagekit %}
@@ -11,7 +11,7 @@
 </div>
 <!-- /colum1 -->
 <!-- colum2 -->
-<div class="work col-lg-6 col-xs-6" style="margin:0; padding:0; height:100vh;">
+<div class="work col-lg-6  col-xs-6" style="margin:0; padding:0; height:100vh;">
     <!-- work area -->
     
     <i class="fa fa-spinner fa-6 fa-pulse" id="loading-indicator" style="display:none" /></i>
@@ -42,7 +42,6 @@
         
     </div>
     <!-- effects -->
-    <!--{%include "main/effects.html"%}-->
     {%include "main/meffects.html"%}
     <!-- IMPORTANT enctype attribute! -->
     <!-- /column 2 -->
@@ -50,25 +49,13 @@
     
 </div>
 
-<div class="main col-lg-1  col-xs-1" style="margin:0; padding:0; height:100vh; background-color: gainsboro;">
+<div class="main col-lg-2  col-xs-2" style="margin:0; padding:0; height:100vh;">
 <form name=f style="margin-left:50px;">
 	<br>
-	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label=".">effects</div><br><br>
-	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label="."  >manipulation</div><br><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label="." onclick="Manipulation()">Effects</div><br><br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div  class="btn btn-primary btn-sm" role="group" aria-label="." >Manipulation</div><br><br>
 </form>
 </div>
-
-<script>
-// facebook sdk
-(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s);
-js.id = id;
-js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1689075798037081";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
 
 
 {% endblock %} 

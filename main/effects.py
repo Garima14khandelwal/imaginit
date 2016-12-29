@@ -37,9 +37,6 @@ def contrast(image, amount=1.1):
     enhanced = ImageEnhance.Contrast(image)
     return enhanced.enhance(amount)
     
-def mirror(image):
-    """Mirrior image horizontally."""
-    return ImageOps.mirror(image)
 
 def invert(image):
     """Invert the image."""
@@ -62,7 +59,7 @@ effect = {
     "sharpness": sharpness,
     "contrast": contrast,
     "invert": invert,
-    "mirror" : mirror,
     "denoise": denoise,
-    "mirror": mirror,
+    
+   
 }
